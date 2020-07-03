@@ -1,0 +1,13 @@
+{
+    "instructors": [
+        {
+            "id": 1,
+            "avatar_url": "https://www.google.com/",
+            "name": "Lucy",
+            "birth": 654825600000,
+            "gender": "F",
+            "services": "Yoga, musculação",
+            "created_at": 1593782122506
+        }
+    ]
+}
