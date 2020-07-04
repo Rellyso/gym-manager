@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data')
+const { age } = require('./utils')
 
 // create
 exports.post = function (req, res) {
@@ -12,9 +13,9 @@ exports.post = function (req, res) {
         if (req.body[key] == "")
             return res.send('Please fill in all fields.')
     }
-    
+
     // desestruturando o req.body
-    let {avatar_url, name, birth, gender, services} = req.body
+    let { avatar_url, name, birth, gender, services } = req.body
 
     birth = Date.parse(req.body.birth)
     const created_at = Date.now()
@@ -38,6 +39,31 @@ exports.post = function (req, res) {
 
     // return res.send(req.body)
 }
+
+// show
+exports.show = function (req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) {
+        return res.send('Instructor not found!')
+    }
+
+    const instructor = {
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(", "),
+        created_at: "",
+    }
+
+    console.log(instructor.age)
+    return res.render('instructors/show', { instructor })
+}
+
+
 
 // update 
 
