@@ -202,3 +202,28 @@ button[type="submit"] {
 
     width: 100%;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    
+    .card {
+        max-width: 90%;  
+    }
+
+    div.card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    form.card {
+        display: block; 
+    }
+
+    form section.avatar {
+        display: none;
+    }
+
+    form .details h3 {
+        text-align: center;
+    }
+}
