@@ -8,6 +8,15 @@
             "gender": "F",
             "services": "Yoga, musculação, natação",
             "created_at": 1593782122506
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://source.unsplash.com/collection/9785920/500x500",
+            "name": "Ruanda",
+            "birth": 639100800000,
+            "gender": "F",
+            "services": "musculação, natação, ginástica",
+            "created_at": 1594035681841
         }
     ]
 }

@@ -14,49 +14,7 @@
             
             <h3>novo instrutor</h3>
 
-            <div class="item">
-                <div>URL do avatar</div>
-                <input 
-                    type="url" 
-                    name="avatar_url"
-                    placeholder="https://"
-                    >
-            </div>
-
-            <div class="item">
-                <div>Instrutor</div>
-                <input 
-                    type="text"
-                    name="name"
-                >
-            </div>
-
-            <div class="item">
-                <div>Data de Nascimento</div>
-                <input 
-                type="date" 
-                name="birth" 
-                >
-            </div>
-
-            <div class="item">
-                <div>Sexo</div>
-                <span><input type="radio" name="gender" value="M" checked>Masculino</span>
-                <span><input type="radio" name="gender" value="F">Feminino</span>
-            </div>
-
-            <div class="item">
-                <div>Área de Atuação</div>
-                <div>
-                    <input 
-                    type="text" 
-                    name="services"
-                    placeholder="separe os serviços prestados por vírgula">
-                </div>
-            </div>
-            <div class="item">
-                <button type="submit">Salvar</button>
-            </div>
+            {% include 'instructors/fields.njk' %}
 
         </section>
         
