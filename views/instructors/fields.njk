@@ -4,7 +4,7 @@
     type="url" 
     name="avatar_url" 
     placeholder="https://" 
-    value=" {{ instructor.avatar_url }}">
+    value="{{ instructor.avatar_url }}">
 </div>
 
 <div class="item">
@@ -12,7 +12,7 @@
     <input 
     type="text" 
     name="name" 
-    value=" {{ instructor.name }}">
+    value="{{ instructor.name }}">
 </div>
 
 <div class="item">
@@ -57,10 +57,9 @@
         type="text" 
         name="services" 
         placeholder="separe os serviços prestados por vírgula"
-        value= " {{ instructor.services }}">
+        value= "{{ instructor.services }}">
     </div>
 
 </div>
-<div class="item">
-    <button type="submit">Salvar</button>
-</div>
+
+<button type="submit">Salvar</button>
