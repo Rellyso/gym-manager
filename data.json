@@ -1,44 +1,18 @@
 {
     "instructors": [
         {
-            "id": "1",
-            "avatar_url": "https://www.google.com/",
-            "name": "Lucy",
-            "birth": 654825600000,
-            "gender": "F",
-            "services": "Yoga, musculação, natação, Levantamento de peso"
-        },
-        {
-            "id": 3,
-            "avatar_url": "https://source.unsplash.com/collection/9785920/500x500",
-            "name": "Ruandaa",
-            "birth": 639100800000,
-            "gender": "F",
-            "services": " musculação, natação, ginástica",
-            "created_at": 1594166306858
-        },
-        {
-            "id": "4",
+            "id": 4,
             "avatar_url": "https://image.freepik.com/fotos-gratis/homem-natacao-em-um-piscina_53419-2089.jpg",
             "name": "Lucas",
-            "birth": 686361600000,
+            "birth": 654825600000,
             "gender": "M",
             "services": " Yoga, musculação, natação",
             "created_at": 1594166679618
         },
         {
-            "id": 5,
-            "avatar_url": "https://www.google.com/",
-            "name": "Vitória",
-            "birth": 339292800000,
-            "gender": "F",
-            "services": " Yoga, musculação, natação",
-            "created_at": 1594166739481
-        },
-        {
-            "id": 5,
+            "id": 6,
             "avatar_url": "https://gustavoborges.com.br/wp-content/uploads/2016/03/natacao-feminina.jpg",
-            "name": "Ruanda",
+            "name": "Luana",
             "birth": 634089600000,
             "gender": "F",
             "services": "natação",
