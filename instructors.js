@@ -4,13 +4,15 @@ const { age, date } = require('./utils')
 
 // index
 exports.index = function (req, res) {
-    let instructors = data.instructors
+    let instructors = [...data.instructors]
 
     for (let i = 0; i < instructors.length; i++) {
         const services = instructors[i].services
-        instructors[i].services = services.split(',')
+        instructors[i] = {
+            ...instructors[i],
+            services: services.split(',')
+        }
     }
-
 
     return res.render('instructors/index', { instructors })
 }
@@ -65,6 +67,8 @@ exports.show = function (req, res) {
         return res.send('Instructor not found!')
     }
 
+    console.log(foundInstructor)
+
     const instructor = {
         ...foundInstructor,
         age: age(foundInstructor.birth),
@@ -72,7 +76,6 @@ exports.show = function (req, res) {
         created_at: new Intl.DateTimeFormat('en-GB').format(foundInstructor.created_at),
     }
 
-    console.log(instructor.age)
     return res.render('instructors/show', { instructor })
 }
 
