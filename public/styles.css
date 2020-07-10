@@ -148,7 +148,7 @@ header {
     color: var(--primary-color);
 }
 
-.details .item span {
+.item span {
     padding: 8px 16px;
     margin-right: 4px;
     margin-top: 8px;

@@ -4,8 +4,15 @@ const { age, date } = require('./utils')
 
 // index
 exports.index = function (req, res) {
-    
-    return res.render('instructors/index', { instructors: data.instructors })
+    let instructors = data.instructors
+
+    for (let i = 0; i < instructors.length; i++) {
+        const services = instructors[i].services
+        instructors[i].services = services.split(',')
+    }
+
+
+    return res.render('instructors/index', { instructors })
 }
 
 // create
