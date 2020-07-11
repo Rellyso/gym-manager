@@ -1,11 +1,11 @@
-const cards = document.querySelectorAll('.card')
+let currentPage = window.location.pathname
+const items = document.querySelectorAll('header .links a')
 
-for (let card of cards) {
-    card.addEventListener('click', function(){
-        const videoID = card.getAttribute('id')
-        window.location.href = `/video?id=${videoID}`
-    })
+for (let item of items) {
+    if (currentPage.includes(item.getAttribute('href'))) {
+        item.classList.add('active')
+    }
 }
 
-
+console.log(currentPage)
 
