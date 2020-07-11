@@ -34,7 +34,14 @@ exports.post = function (req, res) {
 
     birth = Date.parse(req.body.birth)
     const created_at = Date.now()
-    const id = Number(data.instructors.length + 1)
+    let id = Number(data.instructors.length + 1)
+
+    for (let i=0; i < data.instructors.length; i++) {
+        if (data.instructors[i].id >= id) {
+            id = Number(data.instructors[i].id) + 1 
+        }
+        console.log(id)
+    }
 
     data.instructors.push({
         id,
