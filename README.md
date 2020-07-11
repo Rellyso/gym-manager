@@ -2,14 +2,21 @@
 
 **<h1> GYM MANAGER </h1>**
 
-![GitHub](https://img.shields.io/github/license/Rellyso/gym-manager?color=%237159c1)
+<center>
 
+<img alt="GitHub" src="https://img.shields.io/github/license/Rellyso/gym-manager">
+
+</center>
+
+<br>
 
 > <h2>SOBRE</h2>
 
 <p align="center">
 Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o <b>Gym Manager</b> mantém informações de instrutores cadastrados disponíveis, para atender demanda de pessoas que, procuram um instrutor para manter sua vida mais saudável.
 </p>
+
+<br>
 
 ----------
 
