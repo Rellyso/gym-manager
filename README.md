@@ -3,9 +3,7 @@
 **<h1> GYM MANAGER </h1>**
 
 <center>
-
 <img alt="GitHub" src="https://img.shields.io/github/license/Rellyso/gym-manager?color=7159c1">
-
 </center>
 
 <br>
