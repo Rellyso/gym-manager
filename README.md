@@ -16,7 +16,6 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 
 <br>
 
-----------
 
 > <h2>PREVIEW</h2>
 
@@ -27,6 +26,8 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 > <h2>STATUS</h2>
 
 ***!!! AINDA EM DESENVOLVIMENTO !!!***
+
+<br>
 
 ----------
 
