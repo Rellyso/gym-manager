@@ -4,7 +4,7 @@
 
 <center>
 
-<img alt="GitHub" src="https://img.shields.io/github/license/Rellyso/gym-manager">
+<img alt="GitHub" src="https://img.shields.io/github/license/Rellyso/gym-manager?color=7159c1">
 
 </center>
 
