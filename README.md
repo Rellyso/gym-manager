@@ -3,9 +3,7 @@
 **<h1> GYM MANAGER </h1>**
 
 <center>
-
 <img alt="GitHub" src="https://img.shields.io/github/license/Rellyso/gym-manager?color=7159c1">
-
 </center>
 
 <br>
@@ -18,7 +16,6 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 
 <br>
 
-----------
 
 > <h2>PREVIEW</h2>
 
@@ -29,6 +26,8 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 > <h2>STATUS</h2>
 
 ***!!! AINDA EM DESENVOLVIMENTO !!!***
+
+<br>
 
 ----------
 
