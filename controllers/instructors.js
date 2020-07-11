@@ -1,8 +1,7 @@
 const fs = require('fs')
-const data = require('./data')
-const { age, date } = require('./utils')
+const data = require('../data.json')
+const { age, date } = require('../utils')
 
-// index
 exports.index = function (req, res) {
     let instructors = [...data.instructors]
 
@@ -17,7 +16,10 @@ exports.index = function (req, res) {
     return res.render('instructors/index', { instructors })
 }
 
-// create
+exports.create = function (req, res) {
+    return res.render('instructors/create')
+}
+
 exports.post = function (req, res) {
     // GET = req.query
     // POST = req.body -> para habilitar deve-se usar o express.urlencoded({ extended: true})
@@ -62,7 +64,6 @@ exports.post = function (req, res) {
     // return res.send(req.body)
 }
 
-// show
 exports.show = function (req, res) {
     const { id } = req.params
 
@@ -86,7 +87,6 @@ exports.show = function (req, res) {
     return res.render('instructors/show', { instructor })
 }
 
-// edit 
 exports.edit = function (req, res) {
     const { id } = req.params
 
@@ -107,7 +107,6 @@ exports.edit = function (req, res) {
     return res.render('instructors/edit.njk', { instructor })
 }
 
-// put
 exports.put = function (req, res) {
     const { id } = req.body
     let index = 0
@@ -135,8 +134,6 @@ exports.put = function (req, res) {
     console.log(id)
     return res.redirect(`instructors/${id}`)
 }
-
-// delete
 
 exports.delete = function (req, res) {
     const { id } = req.body

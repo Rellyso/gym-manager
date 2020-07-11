@@ -1,9 +1,13 @@
 {
+    "members": [
+        
+    ],
+
     "instructors": [
         {
             "id": 4,
             "avatar_url": "https://image.freepik.com/fotos-gratis/homem-natacao-em-um-piscina_53419-2089.jpg",
-            "name": "Lucas Silva",
+            "name": "Lucas",
             "birth": 654825600000,
             "gender": "M",
             "services": "Yoga, musculação, natação",
@@ -44,6 +48,15 @@
             "gender": "F",
             "services": "Yoga, musculação",
             "created_at": 1594476254852
+        },
+        {
+            "id": 10,
+            "avatar_url": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            "name": "Francisco",
+            "birth": 888796800000,
+            "gender": "M",
+            "services": "musculação",
+            "created_at": 1594476635773
         }
     ]
 }
