@@ -6,6 +6,3 @@ for (let item of items) {
         item.classList.add('active')
     }
 }
-
-console.log(currentPage)
-

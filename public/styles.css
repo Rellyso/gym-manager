@@ -168,7 +168,8 @@ header {
 /* ====== FORM ====== */
 
 input, 
-input[type="date"] {
+input[type="date"],
+select {
     width: 100%;
 
     outline: none;
@@ -250,6 +251,13 @@ a.button {
     display: block;
 
     padding: 40px;
+
+    font-weight: 500;
+}
+
+.table-container > a {
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .table-container table {
@@ -273,6 +281,7 @@ tbody tr:last-child td {
 tbody td:first-child {
     display: grid;
     grid-template-columns: 64px 1fr;
+    align-items: center;
 }
 
 tbody td:first-child span {
@@ -299,7 +308,8 @@ tbody td:last-child {
     text-align: center;
 }
 
-.table-container td a {
+.table-container td a,
+.table-container > a {
     padding: 8px 16px;
     
     background-color: var(--primary-color);
@@ -310,4 +320,6 @@ tbody td:last-child {
 
     font-size: 12px;
     font-weight: 500;
+
+    border-radius: 4px;
 }
