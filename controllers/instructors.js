@@ -34,7 +34,7 @@ exports.post = function (req, res) {
     // desestruturando o req.body
     let { avatar_url, name, birth, gender, services } = req.body
 
-    birth = Date.parse(req.body.birth)
+    birth = Date.parse(birth)
     const created_at = Date.now()
     let id = Number(data.instructors.length + 1)
 
@@ -100,7 +100,7 @@ exports.edit = function (req, res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth)
+        birth: date(foundInstructor.birth).iso
     }
 
 

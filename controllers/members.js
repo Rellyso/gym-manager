@@ -1,17 +1,9 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { age, date } = require('../utils')
+const { age, date, blood } = require('../utils')
 
 exports.index = function (req, res) {
     let members = [...data.members]
-
-    for (let i = 0; i < members.length; i++) {
-        const services = members[i].services
-        members[i] = {
-            ...members[i],
-            services: services.split(',')
-        }
-    }
 
     return res.render('members/index', { members })
 }
@@ -31,34 +23,24 @@ exports.post = function (req, res) {
             return res.send('Please fill in all fields.')
     }
 
-    // desestruturando o req.body
-    let { avatar_url, name, birth, gender, services } = req.body
-
     birth = Date.parse(req.body.birth)
-    const created_at = Date.now()
-    let id = Number(data.members.length + 1)
+    let id = 1
+    const lastMember = data.members[data.members.length - 1]
 
-    for (let i=0; i < data.members.length; i++) {
-        if (data.members[i].id >= id) {
-            id = Number(data.members[i].id) + 1 
-        }
-        console.log(id)
+    if (lastMember) {
+        id = lastMember.id + 1
     }
 
     data.members.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        gender,
-        services,
-        created_at
+        ...req.body,
+        birth
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 4), function (err) {
         if (err) return res.send('Write file error.')
 
-        return res.redirect('/members')
+        return res.redirect(`/members/${id}`)
     })
 
     // return res.send(req.body)
@@ -75,13 +57,10 @@ exports.show = function (req, res) {
         return res.send('Member not found!')
     }
 
-    console.log(foundMember)
-
     const member = {
         ...foundMember,
-        age: age(foundMember.birth),
-        services: foundMember.services.split(", "),
-        created_at: new Intl.DateTimeFormat('en-GB').format(foundMember.created_at),
+        birth: date(foundMember.birth).birthDay,
+        blood: blood(foundMember.blood)
     }
 
     return res.render('members/show', { member })
@@ -100,7 +79,7 @@ exports.edit = function (req, res) {
 
     const member = {
         ...foundMember,
-        birth: date(foundMember.birth)
+        birth: date(foundMember.birth).iso
     }
 
 
