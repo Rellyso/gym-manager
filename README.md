@@ -19,7 +19,7 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 
 > <h2>PREVIEW</h2>
 
-![preview gym manager](https://ik.imagekit.io/rellyson/gym_yU1cNAxpv.gif)
+![preview gym manager](https://content-na.drive.amazonaws.com/cdproxy/templink/AGO7EtwYs8KBR6heZSabeN10cSWVIrYsbcCTO5gTOa0eJxFPc)
 
 <br>
 
