@@ -1,8 +1,17 @@
 {
     "members": [
-        
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1594250945013-b5c634b764c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
+            "name": "Vitória",
+            "birth": 781056000000,
+            "email": "vitoria@lookoone.com",
+            "gender": "F",
+            "blood": "AB1",
+            "weight": "75",
+            "height": "180",
+            "id": 1
+        }
     ],
-
     "instructors": [
         {
             "id": 4,
