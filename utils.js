@@ -19,6 +19,35 @@ module.exports = {
         const month = `0${(date.getUTCMonth() + 1)}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `${year}-${month}-${day}`
+        return {
+            day,
+            month,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        }
+    },
+    blood: function (type) {
+        let res = ""
+        switch (type) {
+            case "A1": res = "A+"; break
+
+            case "A0": res = "A-"; break
+
+            case "B1": res = "B+"; break  
+
+            case "B0": res = "B-"; break  
+
+            case "O1": res = "O+"; break  
+
+            case "O0": res = "O-"; break  
+
+            case "AB1": res = "AB+"; break  
+
+            case "AB0": res = "AB-"; break
+
+            default: return false
+        }
+
+        return res
     }
 }
