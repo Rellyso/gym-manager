@@ -16,20 +16,20 @@ Desenvolvido para facilitar a comunicação entre instrutores e seus membros, o 
 <br>
 
 
-> <h2> :zap: PREVIEW</h2>
+> <h2>:zap: PREVIEW</h2>
 
 ![preview gym manager](https://ik.imagekit.io/rellyson/GYM_MANAGER/gym_kvYx9PC-y.gif)
 
 
 <br>
 
-> <h2> :clock11: STATUS</h2>
+> <h2>:clock11: STATUS</h2>
 
 :construction: **AINDA EM DESENVOLVIMENTO** :construction:  
 
 <br>
 
-> <h2> Tecnologias utilizadas</h2>
+> <h2>:file_folder: TECNOLOGIAS UTILIZADAS</h2>
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
