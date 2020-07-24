@@ -124,6 +124,10 @@
 <div class="item">
     <div>Instrutor</div>
     <select name="instructor">
+
+        <option value="" selected disabled invalid>
+            selecione seu instrutor...
+        </option>
         {% for instructor in instructorOptions %}
         <option value="{{ instructor.id }}" {% if member.instructor_id == instructor.id %} selected {% endif %}
         >
