@@ -1,6 +1,7 @@
 const { age, date } = require('../../lib/utils')
 
 const Member = require('../models/Member')
+const { instructorSelectOptions } = require('../models/Member')
 
 module.exports = {
     index(req, res) {
@@ -11,7 +12,9 @@ module.exports = {
 
     },
     create(req, res) {
-        return res.render('members/create')
+        instructorSelectOptions(function (options) {
+            return res.render('members/create', {instructorOptions: options})
+        })
     },
     post(req, res) {
         const keys = Object.keys(req.body)
@@ -42,7 +45,9 @@ module.exports = {
 
             member.birth = date(member.birth).iso
 
-            return res.render('members/edit', { member })
+            instructorSelectOptions(function (options) {
+                return res.render('members/edit', { member, instructorOptions: options})
+            })
         })
 
     },
