@@ -336,3 +336,32 @@ tbody td:last-child {
 
     border-radius: 4px;
 }
+
+/* FILTER */
+
+.table-container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.table-container .header a.button {
+    width: 120px;
+}
+
+.table-container .header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    gap: 8px;
+}
+
+.table-container .header a,
+.table-container .header form button {
+    margin: 0;
+}
+
+.table-container .header input {
+    border: 1px solid #eee;
+    padding: 4px 8px ;
+}
