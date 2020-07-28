@@ -337,6 +337,15 @@ tbody td:last-child {
     border-radius: 4px;
 }
 
+tbody .item {
+    margin: 0;
+    padding: 0;
+}
+
+tbody .item span {
+    margin: 2px;
+}
+
 /* FILTER */
 
 .table-container .header {
