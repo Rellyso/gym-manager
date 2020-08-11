@@ -374,3 +374,32 @@ tbody .item span {
     border: 1px solid #eee;
     padding: 4px 8px ;
 }
+
+/* pagination */
+
+.table-container {
+    display: grid;
+    grid-template: 64px 1fr 16px / 1fr;
+}
+
+.table-container .header {
+    margin: 0;
+    align-self: start;
+}
+
+.table-container .pagination {
+    align-self: end;
+    justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 16px;
+}
+
+.pagination a:hover {
+    filter: brightness(0.3);
+    border-bottom: 1px solid var(--primary-color);
+}
